@@ -23,11 +23,11 @@
     "bootstrap": "^4.0.0",
     "core-js": "^2.5.4",
     "html2canvas": "^1.0.0-alpha.12",
+    "intl": "^1.2.5",
     "jquery": "^3.2.1",
     "jspdf": "^1.5.3",
     "pdfjs-dist": "^2.0.943",
     "rxjs": "^6.0.0",
-    "tether": "^1.4.5",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {
