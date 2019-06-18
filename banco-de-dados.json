@@ -206,6 +206,27 @@
       "complemento": "casa",
       "formaPagamento": "dinheiro",
       "id": 3
+    },
+    {
+      "endereco": "Rua Ajuana 2",
+      "numero": "2",
+      "complemento": "casa",
+      "formaPagamento": "dinheiro",
+      "id": 4
+    },
+    {
+      "endereco": "Rua Ajuana 2",
+      "numero": "2",
+      "complemento": "casa",
+      "formaPagamento": "dinheiro",
+      "id": 5
+    },
+    {
+      "endereco": "rua g",
+      "numero": "3",
+      "complemento": "apartamento",
+      "formaPagamento": "debito",
+      "id": 6
     }
   ]
 }
