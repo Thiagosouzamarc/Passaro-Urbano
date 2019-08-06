@@ -227,6 +227,55 @@
       "complemento": "apartamento",
       "formaPagamento": "debito",
       "id": 6
+    },
+    {
+      "endereco": "rua zilda",
+      "numero": "88",
+      "complemento": "casa",
+      "formaPagamento": "dinheiro",
+      "id": 7
+    },
+    {
+      "endereco": "rua cinco",
+      "numero": "55",
+      "complemento": "casa",
+      "formaPagamento": "dinheiro",
+      "id": 8
+    },
+    {
+      "endereco": "rua sete",
+      "numero": "7",
+      "complemento": "casa",
+      "formaPagamento": "debito",
+      "id": 9
+    },
+    {
+      "endereco": "rua oito",
+      "numero": "89",
+      "complemento": "apartamento",
+      "formaPagamento": "dinheiro",
+      "id": 10
+    },
+    {
+      "endereco": "rua dez",
+      "numero": "10",
+      "complemento": "casa",
+      "formaPagamento": "dinheiro",
+      "id": 11
+    },
+    {
+      "endereco": "rua nove",
+      "numero": "9",
+      "complemento": "casa",
+      "formaPagamento": "dinheiro",
+      "id": 12
+    },
+    {
+      "endereco": "rua seis",
+      "numero": "5",
+      "complemento": "casa",
+      "formaPagamento": "dinheiro",
+      "id": 13
     }
   ]
 }

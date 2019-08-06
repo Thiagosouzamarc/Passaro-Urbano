@@ -4,7 +4,8 @@ import { Oferta } from '../shared/oferta.model';
 import * as jsPDF from 'jspdf';
 import html2canvas from 'html2canvas';
 //import { PDFJS } from 'pdfjs-dist';
-import * as PDFJS from 'pdfjs-dist/build/pdf'
+import * as PDFJS from 'pdfjs-dist/build/pdf';
+import { FormBuilder, FormGroup, FormArray, FormControl } from '@angular/forms'
 
 @Component({
   selector: 'app-home',
@@ -14,6 +15,8 @@ import * as PDFJS from 'pdfjs-dist/build/pdf'
 })
 export class HomeComponent implements OnInit {
 
+  form : FormGroup
+  orders = [];
   imgSrc: string;
   imgWidth: number;
   imgHeight: number;
@@ -21,7 +24,37 @@ export class HomeComponent implements OnInit {
 
   public ofertas: Oferta[]
 
-  constructor(private ofertasService: OfertasService) { }
+  constructor(private ofertasService: OfertasService,
+              private formBuilder: FormBuilder) {
+                this.form = this.formBuilder.group({
+                  orders: new FormArray([])
+                })
+                this.orders = this.getOrders();
+                this.addCheckboxes();
+   }
+
+   private addCheckboxes() {
+    this.orders.map((o, i) => {
+      const control = new FormControl(i === 0); // if first item set to true, else false
+      (this.form.controls.orders as FormArray).push(control);
+    });
+  }
+
+  getOrders() {
+    return [
+      { id: 100, name: 'order 1' },
+      { id: 200, name: 'order 2' },
+      { id: 300, name: 'order 3' },
+      { id: 400, name: 'order 4' }
+    ];
+  }
+
+  submit() {
+    const selectedOrderIds = this.form.value.orders
+      .map((v, i) => v ? this.orders[i].name : null)
+      .filter(v => v !== null);
+    console.log(selectedOrderIds);
+  }
 
   ngOnInit() {
     //this.ofertas = this.ofertasService.getOfertas()
