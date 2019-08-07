@@ -276,6 +276,54 @@
       "complemento": "casa",
       "formaPagamento": "dinheiro",
       "id": 13
+    },
+    {
+      "endereco": "rua dois",
+      "numero": "2",
+      "complemento": "casa",
+      "formaPagamento": "dinheiro",
+      "itens": [
+        {
+          "id": 1,
+          "img": {
+            "url": "/assets/ofertas/1/img1.jpg"
+          },
+          "titulo": "Super Burger",
+          "descricao_oferta": "Rodízio de Mini-hambúrger com opção de entrada.",
+          "valor": 29.9,
+          "quantidade": 1
+        }
+      ],
+      "id": 14
+    },
+    {
+      "endereco": "rua 5",
+      "numero": "8",
+      "complemento": "casa",
+      "formaPagamento": "dinheiro",
+      "itens": [
+        {
+          "id": 1,
+          "img": {
+            "url": "/assets/ofertas/1/img1.jpg"
+          },
+          "titulo": "Super Burger",
+          "descricao_oferta": "Rodízio de Mini-hambúrger com opção de entrada.",
+          "valor": 29.9,
+          "quantidade": 3
+        },
+        {
+          "id": 2,
+          "img": {
+            "url": "/assets/ofertas/2/img1.jpg"
+          },
+          "titulo": "Cozinha Mexicana",
+          "descricao_oferta": "Almoço ou Jantar com Rodízio Mexicano delicioso.",
+          "valor": 32.9,
+          "quantidade": 1
+        }
+      ],
+      "id": 15
     }
   ]
 }
